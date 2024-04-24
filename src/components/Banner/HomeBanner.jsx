@@ -6,8 +6,8 @@ const HomeBanner = () => {
       style={{ backgroundImage: `url(${homeBanner})` }}
       className="bg-no-repeat bg-center bg-cover h-[350px] md:h-[500px] lg:h-[600px]"
     >
-      <div className="container mx-auto px-4 h-full flex justify-center lg:justify-end items-center">
-        <div className="space-y-4 lg:mr-[100px] text-center lg:text-left">
+      <div className="container mx-auto px-4 h-full flex justify-center lg:justify-end items-center lg:px-[100px]">
+        <div className="space-y-4 text-center lg:text-left">
           <h1 className="text-white text-3xl md:text-4xl lg:text-[55px]">
             Would you like a Cup of Delicious Coffee?
           </h1>

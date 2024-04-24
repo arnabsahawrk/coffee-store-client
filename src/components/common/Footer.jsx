@@ -10,7 +10,7 @@ const Footer = () => {
         style={{ backgroundImage: `url(${footerBg1})` }}
         className="bg-no-repeat bg-center bg-cover pt-10 pb-5 bg-[#f6f6f6] bg-opacity-50"
       >
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-around items-center gap-4 py-2">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center gap-4 py-2 lg:px-[100px]">
           <FooterDetails />
           <FooterContact />
         </div>
