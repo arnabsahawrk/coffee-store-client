@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import HomeBanner from "../components/Banner/HomeBanner";
 
 const HomePage = () => {
   return (
@@ -7,7 +8,7 @@ const HomePage = () => {
         <title>Home</title>
       </Helmet>
       <section>
-        <div className="container mx-auto px-4"></div>
+        <HomeBanner />
       </section>
     </>
   );
