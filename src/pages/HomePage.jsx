@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import HomeBanner from "../components/Banner/HomeBanner";
 import ShowcaseBanner from "../components/Banner/ShowcaseBanner";
 import ShowcaseInstagramPic from "../components/Banner/ShowcaseInstagramPic";
+import ProductSection from "../components/Products/ProductSection";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <section>
         <HomeBanner />
         <ShowcaseBanner />
+        <ProductSection />
         <ShowcaseInstagramPic />
       </section>
     </>

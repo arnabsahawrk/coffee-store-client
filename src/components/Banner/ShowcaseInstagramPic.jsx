@@ -10,12 +10,12 @@ import cupEight from "../../assets/images/cups/Rectangle 16.png";
 const ShowcaseInstagramPic = () => {
   return (
     <section>
-      <div className="container mx-auto px-4 lg:px-[100px] py-10 text-center space-y-2">
+      <div className="container mx-auto px-4 lg:px-[100px] py-10 text-center space-y-4">
         <p className="text-[#1B1A1A]">Follow Us Now</p>
         <h1 className="text-[#331A15] text-3xl md:text-4xl lg:text-[55px]">
           Follow on Instagram
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:pt-3">
           <img
             className="object-cover w-full h-[300px] rounded-xl"
             src={cupThree}

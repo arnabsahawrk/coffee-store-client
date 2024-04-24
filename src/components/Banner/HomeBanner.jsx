@@ -17,7 +17,7 @@ const HomeBanner = () => {
             beautiful moments and make them memorable.
           </p>
           <button className="text-[#242222] bg-[#E3B577] border border-[#E3B577] hover:bg-transparent hover:text-white hover:border-white text-lg md:text-xl lg:text-2xl py-1 px-4">
-            Learn More
+            <a href="#footer">Learn More</a>
           </button>
         </div>
       </div>

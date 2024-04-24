@@ -5,7 +5,7 @@ import FooterContact from "./FooterContact";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <section
         style={{ backgroundImage: `url(${footerBg1})` }}
         className="bg-no-repeat bg-center bg-cover pt-10 pb-5 bg-[#f6f6f6] bg-opacity-50"
