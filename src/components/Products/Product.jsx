@@ -5,6 +5,7 @@ import coffeeCup from "../../assets/images/coffee/5.png";
 import PropTypes from "prop-types";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const Product = ({ coffee, refetch }) => {
   const { _id, coffeeName, chef, coffeePic } = coffee;
@@ -65,9 +66,11 @@ const Product = ({ coffee, refetch }) => {
         </p>
       </div>
       <ul className="flex gap-4 lg:flex-col">
-        <li className="p-1 rounded-md bg-[#D2B48C]">
-          <FaEye className="text-white" />
-        </li>
+        <Link to={`coffeeDetails/${_id}`}>
+          <li className="p-1 rounded-md bg-[#D2B48C]">
+            <FaEye className="text-white" />
+          </li>
+        </Link>
         <li className="p-1 rounded-md bg-[#3C393B]">
           <IoPencil className="text-white" />
         </li>
