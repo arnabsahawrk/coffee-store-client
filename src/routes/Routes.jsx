@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import AddCoffeePage from "../pages/AddCoffeePage";
 import CoffeeDetailsPage from "../pages/CoffeeDetailsPage";
 import axios from "axios";
+import UpdateCoffeePage from "../pages/UpdateCoffeePage";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,17 @@ const router = createBrowserRouter([
         path: "/coffeeDetails/:id",
         element: <CoffeeDetailsPage />,
         loader: ({ params }) =>
-          axios.get(`http://localhost:8080/coffees/${params.id}`),
+          axios.get(
+            `https://coffee-store-server-arnab-saha.vercel.app/coffees/${params.id}`
+          ),
+      },
+      {
+        path: "/updateCoffee/:id",
+        element: <UpdateCoffeePage />,
+        loader: ({ params }) =>
+          axios.get(
+            `https://coffee-store-server-arnab-saha.vercel.app/coffees/${params.id}`
+          ),
       },
     ],
   },

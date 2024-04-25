@@ -48,7 +48,7 @@ const Product = ({ coffee, refetch }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between gap-4 p-7 bg-[#F5F4F1] rounded-lg">
       <img
-        className="object-cover max-w-[192.23px]"
+        className="object-cover max-w-[192.23px] max-h-[239px]"
         src={coffeePic || coffeeCup}
         alt="Coffee"
       />
@@ -71,9 +71,11 @@ const Product = ({ coffee, refetch }) => {
             <FaEye className="text-white" />
           </li>
         </Link>
-        <li className="p-1 rounded-md bg-[#3C393B]">
-          <IoPencil className="text-white" />
-        </li>
+        <Link to={`updateCoffee/${_id}`}>
+          <li className="p-1 rounded-md bg-[#3C393B]">
+            <IoPencil className="text-white" />
+          </li>
+        </Link>
         <li
           onClick={() => {
             handleDelete(_id);

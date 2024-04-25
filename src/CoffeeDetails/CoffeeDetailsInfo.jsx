@@ -9,7 +9,7 @@ const CoffeeDetailsInfo = ({ coffee }) => {
   return (
     <div className="bg-[#F4F3F0] rounded-md p-10 lg:p-16 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-20 lg:gap-24">
       <img
-        className="object-cover max-w-[351px]"
+        className="object-cover max-w-[351px] max-h-[455px]"
         src={coffeePic || coffeeCup}
         alt="Coffee"
       />
