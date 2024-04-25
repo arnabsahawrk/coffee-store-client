@@ -33,7 +33,7 @@ const AddCoffeeForm = () => {
       if (data?.insertedId) {
         Swal.fire({
           title: "New Coffee Added",
-          text: "New coffee data added Successfully",
+          text: "New coffee details added Successfully",
           icon: "success",
           confirmButtonText: "Ok",
         });
@@ -41,7 +41,7 @@ const AddCoffeeForm = () => {
     } catch {
       Swal.fire({
         title: "Failed",
-        text: "Failed to added new coffee data, try again.",
+        text: "Failed to add new coffee details, try again.",
         icon: "error",
       });
     }
