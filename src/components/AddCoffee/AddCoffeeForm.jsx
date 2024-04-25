@@ -1,5 +1,8 @@
+import axios from "axios";
+import Swal from "sweetalert2";
+
 const AddCoffeeForm = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const coffeeName = form.coffeeName.value;
@@ -20,7 +23,28 @@ const AddCoffeeForm = () => {
       coffeePic,
     };
 
-    console.log(coffee);
+    try {
+      const response = await axios.post(
+        "https://coffee-store-server-orpin-three.vercel.app/coffees",
+        coffee
+      );
+      const { data } = response;
+
+      if (data?.insertedId) {
+        Swal.fire({
+          title: "New Coffee Added",
+          text: "New coffee data added Successfully",
+          icon: "success",
+          confirmButtonText: "Ok",
+        });
+      }
+    } catch {
+      Swal.fire({
+        title: "Failed",
+        text: "Failed to added new coffee data, try again.",
+        icon: "error",
+      });
+    }
   };
 
   return (
